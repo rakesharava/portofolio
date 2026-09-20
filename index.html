@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arava Rakesh Kumar | Software Developer Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+
+  <!-- NAVIGATION BAR -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-500 to-cyan-500 bg-clip-text text-transparent">
+        ARK.dev
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Skills</a>
+        <a href="#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Projects</a>
+        <a href="#certifications" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Certifications</a>
+        <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <!-- Dark Mode Toggle Button -->
+        <button id="theme-toggle" class="p-2 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" title="Toggle Theme">
+          <i id="theme-icon" class="fa-solid fa-moon text-lg"></i>
+        </button>
+        <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-sm transition-all">
+          Hire Me
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="about" class="pt-32 pb-20 px-4 sm:px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    <div class="flex-1 space-y-6 text-center md:text-left">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 text-xs font-semibold text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/60 rounded-full border border-indigo-200 dark:border-indigo-800">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Open for Software Developer & IT Roles</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+        Hi, I'm <span class="bg-gradient-to-r from-indigo-500 to-cyan-500 bg-clip-text text-transparent">Arava Rakesh Kumar</span>
+      </h1>
+      <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        Software Developer skilled in Python, Flask, JavaScript, and MySQL. Experienced in production-grade AI-assisted geospatial data validation, error detection, and incident response workflows at Wipro.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+        <a href="#projects" class="px-6 py-3 rounded-lg text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 shadow-md transition-all">
+          View Projects
+        </a>
+        <a href="https://rakesharava.github.io/Youth-Way---AI-Career-Guidance/" target="_blank" class="px-6 py-3 rounded-lg text-sm font-semibold border border-indigo-500 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950 transition-all flex items-center gap-2">
+          <i class="fa-solid fa-bolt text-amber-500"></i> Live Career App
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex items-center justify-center md:justify-start gap-5 pt-4 text-xl text-slate-600 dark:text-slate-400">
+        <a href="https://github.com/rakesharava" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/arava-rakesh-kumar" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:rakesharava8@gmail.com" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+918121577167" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS SECTION -->
+  <section id="skills" class="py-20 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Technical Stack</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Technologies, frameworks, and tools in my development workflow</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Programming -->
+        <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-indigo-500 transition-all">
+          <div class="text-indigo-600 dark:text-indigo-400 text-2xl mb-4"><i class="fa-solid fa-code"></i></div>
+          <h3 class="text-lg font-bold mb-3">Programming Languages</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">Python</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">JavaScript (ES6+)</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">Java</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">C</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">SQL</span>
+          </div>
+        </div>
+
+        <!-- Web & Backend -->
+        <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-indigo-500 transition-all">
+          <div class="text-indigo-600 dark:text-indigo-400 text-2xl mb-4"><i class="fa-solid fa-layer-group"></i></div>
+          <h3 class="text-lg font-bold mb-3">Backend & Full Stack</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">Flask</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">MySQL Relational Design</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">RESTful APIs</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">HTML5 / CSS3</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">Bootstrap / Tailwind</span>
+          </div>
+        </div>
+
+        <!-- AI, ML & Core Tools -->
+        <div class="p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-indigo-500 transition-all">
+          <div class="text-indigo-600 dark:text-indigo-400 text-2xl mb-4"><i class="fa-solid fa-brain"></i></div>
+          <h3 class="text-lg font-bold mb-3">AI, ML & Engineering Tools</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">Scikit-learn</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">TF-IDF Vectorization</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">NLP Preprocessing</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">Git & GitHub</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">Linux Terminal</span>
+            <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded-md">Jupyter Notebook</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
+    <div class="text-center space-y-3">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Featured Projects</h2>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Applications highlighting algorithmic thinking, full-stack architecture, and machine learning</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1: Youth-Way AI Career Guidance -->
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between hover:border-indigo-500 transition-all group">
+        <div class="p-6 space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Live Web Application</span>
+            <div class="flex space-x-3 text-slate-500">
+              <a href="https://rakesharava.github.io/Youth-Way---AI-Career-Guidance/" target="_blank" class="hover:text-indigo-600 transition-colors" title="Live Website">
+                <i class="fa-solid fa-arrow-up-right-from-square text-lg"></i>
+              </a>
+              <a href="https://github.com/rakesharava/Youth-Way---AI-Career-Guidance" target="_blank" class="hover:text-indigo-600 transition-colors" title="Source Code">
+                <i class="fa-brands fa-github text-lg"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold group-hover:text-indigo-600 transition-colors">Youth-Way — AI Career Guidance</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Intelligent admission and career prediction platform that algorithms candidate ranks across POLYCET, EAMCET, ECET, and Diploma streams to recommend suitable institutions.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">JavaScript</span>
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">HTML5 / CSS3</span>
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">Decision Logic</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="https://rakesharava.github.io/Youth-Way---AI-Career-Guidance/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold transition-all">
+            Launch Live Demo <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2: Leave Management System -->
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between hover:border-indigo-500 transition-all group">
+        <div class="p-6 space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Full Stack</span>
+            <a href="https://github.com/rakesharava" target="_blank" class="hover:text-indigo-600 transition-colors" title="GitHub Code"><i class="fa-brands fa-github text-lg"></i></a>
+          </div>
+          <h3 class="text-xl font-bold group-hover:text-indigo-600 transition-colors">Employee Leave Management</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Automated internal portal streamlining leave requests, role-based manager approvals, and balance audits using Flask routing and MySQL relational schemas.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">Python</span>
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">Flask</span>
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">MySQL</span>
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">RBAC</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Spam Classifier -->
+      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm flex flex-col justify-between hover:border-indigo-500 transition-all group">
+        <div class="p-6 space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">Machine Learning</span>
+            <a href="https://github.com/rakesharava" target="_blank" class="hover:text-indigo-600 transition-colors" title="GitHub Code"><i class="fa-brands fa-github text-lg"></i></a>
+          </div>
+          <h3 class="text-xl font-bold group-hover:text-indigo-600 transition-colors">Spam vs Ham Classifier</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Supervised text-classification pipeline achieving 96.68% accuracy using TF-IDF feature extraction and Scikit-learn models to filter phishing and spam emails.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">Python</span>
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">Scikit-learn</span>
+            <span class="text-xs px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 rounded-md font-medium">TF-IDF</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="py-20 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-12">
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Experience</h2>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Enterprise roles and production workflows</p>
+      </div>
+
+      <div class="relative border-l-2 border-indigo-500/40 pl-6 space-y-10 ml-4">
+        <!-- Wipro Card -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-600 border-4 border-white dark:border-slate-950"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Associate — Geospatial Data & AI Validation (Response Team)</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 rounded">June 2026 – Present</span>
+          </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Wipro Limited • Hyderabad, India</p>
+          <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-400 space-y-1.5">
+            <li>Part of the core response team detecting and triaging real-time dataset anomalies across global production layers.</li>
+            <li>Take corrective validation actions using real-world reference ground truth and high-resolution satellite telemetry.</li>
+            <li>Enforce 99%+ accuracy benchmarks using AI-guided validation workflows and terminal utilities.</li>
+          </ul>
+        </div>
+
+        <!-- Internships Card -->
+        <div class="relative">
+          <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-700 border-4 border-white dark:border-slate-950"></div>
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Tech Internships (Deloitte & Amaravathi Web Tech)</h3>
+            <span class="text-xs font-semibold px-2.5 py-1 bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded">Completed</span>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            Handled corporate data analytics, cybersecurity practices, and web application frontend/backend integration using JavaScript, HTML, and SQL.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certifications" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
+    <div class="text-center space-y-3">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Certifications</h2>
+      <p class="text-sm text-slate-600 dark:text-slate-400">Credentials and validated skill tracks</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center gap-3">
+        <i class="fa-solid fa-certificate text-indigo-600 text-lg"></i>
+        <span class="text-sm font-semibold">Python Essentials 1 — Cisco Networking Academy</span>
+      </div>
+      <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center gap-3">
+        <i class="fa-solid fa-certificate text-indigo-600 text-lg"></i>
+        <span class="text-sm font-semibold">Python for Data Science — Reliance Foundation</span>
+      </div>
+      <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center gap-3">
+        <i class="fa-solid fa-certificate text-indigo-600 text-lg"></i>
+        <span class="text-sm font-semibold">Data Science & Analytics — HP Life</span>
+      </div>
+      <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center gap-3">
+        <i class="fa-solid fa-certificate text-indigo-600 text-lg"></i>
+        <span class="text-sm font-semibold">Full Stack & Web Development — Data Creations</span>
+      </div>
+      <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center gap-3">
+        <i class="fa-solid fa-certificate text-indigo-600 text-lg"></i>
+        <span class="text-sm font-semibold">AI for Business Proposals — HP Life</span>
+      </div>
+      <div class="p-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center gap-3">
+        <i class="fa-solid fa-certificate text-indigo-600 text-lg"></i>
+        <span class="text-sm font-semibold">PGDCA — C-DAT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-20 bg-slate-100/50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-8">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Get in Touch</h2>
+      <p class="text-slate-600 dark:text-slate-400">Looking for a dependable software developer or have a project to discuss? Feel free to reach out directly.</p>
+      
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="mailto:rakesharava8@gmail.com" class="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-medium flex items-center gap-2 transition-all">
+          <i class="fa-solid fa-envelope"></i> rakesharava8@gmail.com
+        </a>
+        <a href="tel:+918121577167" class="px-6 py-3 rounded-lg border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium flex items-center gap-2 transition-all">
+          <i class="fa-solid fa-phone"></i> +91-8121577167
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500">
+    © 2026 Arava Rakesh Kumar. Built with clean HTML & Tailwind CSS.
+  </footer>
+
+  <!-- DARK/LIGHT THEME TOGGLE SCRIPT -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      if (document.documentElement.classList.contains('dark')) {
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = 'light';
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+      } else {
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+      }
+    });
+  </script>
+</body>
+</html>
